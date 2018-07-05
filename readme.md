@@ -1,4 +1,4 @@
-# CSS Animaitons Micro Presentation
+# CSS Animations Micro-Presentation
 
 This is a small 15 minute presentation to give a quick overview of CSS animations. The page transitions are built using CSS Animations as examples. 
 
