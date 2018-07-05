@@ -6,12 +6,88 @@
     </head>
     <body>
         <div id="slide1" class="slide">
-            <h1>CSS Animations</h1>
-            <h2>A Powerpoint Presentation</h2>
+            <h1 class="phase1">CSS Animations</h1>
+            <h2 class="phase2">A Powerpoint Presentation</h2>
+            <h2 class="phase3">By Patrick Davis</h2>
         </div>
 
-        <div id="slide2" class="slide hidden">
-            Tester
+        <div id="slide2" class="slide">
+            <h1 class="phase1">Keyframes</h1>
+            <p class="phase2">
+                Keyframes are used to create a graduation change in styles over time. Keyframes give more control over intermediate steps of an animtations than transitions.
+            </p>
+            <pre class="phase3">
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+            </pre>
+        </div>
+
+        <div id="slide3" class="slide">
+            <h1>Animation Properties</h1>
+            <p>
+                You can apply a @Keyframes to any object by using the animation css properties and shown below. 
+            </p>
+            <pre>
+.slide {
+    left: -100%;
+    position: relative;
+    animation-name: slide-in;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    /* Or use Shorthand */
+    animation: slide-in 1s .5s 1 ease-in forwards;
+}
+            </pre>
+        </div>
+
+        <div id="slide4" class="slide">
+            <h1>Vendor Prefixes</h1>
+            <p>
+                Gross... we have to type everything in triplicate, but that's CSS baby!
+            </p>
+            <pre>
+@-moz-keyframes rotate { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes rotate { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes rotate { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+            </pre>
+            <p>
+                <i>*I'd Create a SASS mixin if I was doing a real project.</i>
+            </p>
+        </div>
+
+        <div id="slide5" class="slide">
+            <h1>Multiple Animations</h1>
+            <p>
+                You can combine multiple animations by seperating them with commas. 
+            </p>
+        </div>
+
+        <div id="slide6" class="slide">
+            <h1>What if I told you...</h1>
+            <p>
+                This is not a powerpoint presentation at all! You can create all the annoying powerpoint transitions easily using CSS! 
+            </p>
+        </div>
+
+        <div id="slide7" class="slide">
+            <h1>Questions?</h1>
+            <p></p>
+            <h2>Shameless Self-promotion</h2>
+            <p>
+                 Email: patrick@thepatrickdaivs.com<br>
+                 Twitter: @thepatrickdavis<br>
+                 Snapchat: Scan a QR Code?<br>
+                 Blog: http://www.thepatrickdavis.com
+            </p>
         </div>
 
         <script src="index.js"></script>
