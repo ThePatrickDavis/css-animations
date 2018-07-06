@@ -19,7 +19,6 @@ function moveForward() {
     var curSlide = slide;
 
     slide++;
-    console.log(slide);
     var slideName = 'slide' + slide;
     var el = document.getElementById(slideName);
     if(el) {

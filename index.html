@@ -5,16 +5,16 @@
         <link rel="stylesheet" type="text/css" href="index.css">
     </head>
     <body>
-        <div id="slide1" class="slide">
+        <div id="slide1" class="slide title">
             <h1 class="phase1">CSS Animations</h1>
-            <h2 class="phase2">A Powerpoint Presentation</h2>
+            <h2 class="phase2">A PowerPoint Presentation</h2>
             <h2 class="phase3">By Patrick Davis</h2>
         </div>
 
         <div id="slide2" class="slide">
             <h1 class="phase1">Keyframes</h1>
             <p class="phase2">
-                Keyframes are used to create a graduation change in styles over time. Keyframes give more control over intermediate steps of an animtations than transitions.
+                Keyframes are used to create a graduation change in styles over time. Keyframes give more control over intermediate steps of an animations than transitions.
             </p>
             <pre class="phase3">
 @keyframes fade-in {
@@ -44,7 +44,7 @@
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
     /* Or use Shorthand */
-    animation: slide-in 1s .5s 1 ease-in forwards;
+    animation: slide-in 1s ease-in .5s 1 forwards;
 }
             </pre>
         </div>
@@ -67,23 +67,31 @@
         <div id="slide5" class="slide">
             <h1>Multiple Animations</h1>
             <p>
-                You can combine multiple animations by seperating them with commas. 
+                You can combine multiple animations by separating them with commas. 
             </p>
+            <pre>
+.slide5 {
+    animation: rotate 4s linear 0s 1,
+                spaz 4s linear 0s 1,
+                color-change 4s linear 0s 1;
+}
+            </pre>
         </div>
 
         <div id="slide6" class="slide">
             <h1>What if I told you...</h1>
             <p>
-                This is not a powerpoint presentation at all! You can create all the annoying powerpoint transitions easily using CSS! 
+                This is not a PowerPoint presentation at all! You can create all the annoying PowerPoint transitions easily using CSS! 
             </p>
+            <p>Animations should enhance the user experience. Long and annoying animations, like the ones used in this presentation, could leave users frusterated. Keep it subtle!</p>
         </div>
 
         <div id="slide7" class="slide">
             <h1>Questions?</h1>
             <p></p>
-            <h2>Shameless Self-promotion</h2>
+            <h2>Shameless Self-Promotion</h2>
             <p>
-                 Email: patrick@thepatrickdaivs.com<br>
+                 Email: patrick@thepatrickdavis.com<br>
                  Twitter: @thepatrickdavis<br>
                  Snapchat: Scan a QR Code?<br>
                  Blog: http://www.thepatrickdavis.com
